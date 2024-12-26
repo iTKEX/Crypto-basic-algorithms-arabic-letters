@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>التشفير التقليدي للحرف العربية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <section id="intro">
+            <h1>التشفير التقليدي</h1>
+            <p>التشفير بإستخدام الطرق التقليدية للغة العربية</p>
+            <p>_________________________________________________</p>
+            <div class="link-container">
+                <a href="encryption.html" id="link">التشفير</a>
+                <a href="" id="link">فك التشفير</a>
+            </div>
+        </section>
+
+        <section id="main-content" class="cipher-section">
+            <h2>فك التشفير</h2>
+            <select id="cipher-select" name="ciphers">
+                <option value="Shift-cipher">Shift</option>
+                <option value="Monoalphabetic-cipher">Monoalphabetic</option>
+                <option value="Vigenere">Vigenere</option>
+                <option value="Playfair">Playfair</option>
+                <option value="Rail-Fence">Rail Fence</option>
+                <option value="Row-Transposition">Row-Transposition</option>
+                <option value="Double-Transposition">Double-Transposition</option>
+                <option value="ADFGX">ADFGX</option>
+                <option value="One-Time-Pad">One-Time Pad</option>
+            </select>
+
+            <br><br>
+
+            <label for="ciphertext">النص المشفر</label>
+            <input type="text" id="ciphertext" placeholder="أدخل النص المشفر">
+            <br><br>
+
+            <label for="key">المفتاح</label>
+            <input type="text" id="key" placeholder="أدخل المفتاح">
+            <br><br>
+            <button onclick="decryption()">فك التشفير</button>
+            <br><br>
+
+            <label for="plainText">الرسالة</label>
+            <input type="text" id="plaintext" readonly>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Made by Turki Almalki | Mohammed Alharthi | Amjad Banjar | Abdulrahman Alsaedi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
